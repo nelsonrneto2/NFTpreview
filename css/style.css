@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
+:root{
+  --bg-main-blue : hsl(217, 54%, 11%);
+  --card-blue : hsl(216, 50%, 16%);
+  --dark-blue : hsl(215, 32%, 27%);
+  --white : hsl(0, 0%, 100%);
+  --gray : #c9c9c9;
+  --color-hover: rgba(41, 255, 255, 1);
+
+  --p-font-size: 1.12rem;
+  --h1-font-size: 1.5rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: var(--p-font-size);
+  color: var(--dark-blue);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-main-blue);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  max-width: 350px;
+  flex-direction: column;
+  background-color: var(--card-blue);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.25);
+}
+
+.nft-image{
+  position: relative
+}
+
+.nft-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.overlay{
+  position: absolute;
+  top: 0 ;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  opacity: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.overlay img {
+  width: 50px;
+  height: 50px;
+}
+
+.nft-image:hover .overlay {
+  opacity: 0.5;
+}
+
+.title h1 {
+  font-size: var(--h1-font-size);
+  color: var(--white);
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.title h1:hover {
+  color: var(--color-hover)
+}
+
+.description p {
+  color: var(--dark-blue);
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.price-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.days, .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days-img img, .price-img img {
+  margin-right: 10px;
+}
+
+.price p {
+  color: var(--color-hover)
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid var(--dark-blue);
+  padding-top: 20px;
+}
+
+.user-img img {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name span {
+  color: white;
+  cursor: pointer;
+}
+
+.user-name span:hover{
+  color: var(--color-hover);
+}
+
+
+
+
