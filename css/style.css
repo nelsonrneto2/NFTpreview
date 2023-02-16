@@ -3,7 +3,7 @@
 :root{
   --bg-main-blue : hsl(217, 54%, 11%);
   --card-blue : hsl(216, 50%, 16%);
-  --dark-blue : hsl(215, 32%, 27%);
+  --dark-blue : #99B2D1;
   --white : hsl(0, 0%, 100%);
   --gray : #c9c9c9;
   --color-hover: rgba(41, 255, 255, 1);
